@@ -183,20 +183,20 @@ const App: React.FC = () => {
                     <div className="w-20 h-20 bg-amber-100 dark:bg-amber-900/30 rounded-full flex items-center justify-center text-amber-600 dark:text-amber-400 mb-2 border-4 border-white dark:border-slate-900 shadow-lg">
                         <CreditCard className="w-8 h-8" />
                     </div>
-                    <div className="absolute -bottom-1 -right-1 bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-sm border-2 border-white dark:border-slate-900 uppercase tracking-wide">
-                        Paid App
+                    <div className="absolute -bottom-1 -right-1 bg-cyan-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-sm border-2 border-white dark:border-slate-900 uppercase tracking-wide">
+                        API Key
                     </div>
                 </div>
                 
                 <div className="space-y-3">
                     <h2 className="text-2xl font-display font-bold text-slate-900 dark:text-white">
-                        Paid API Key Required
+                        API Key Required
                     </h2>
                     <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed font-medium">
-                        This application uses premium Gemini 3 Pro models which are not available on the free tier.
+                        This application uses Gemini 3.0 Flash models and requires a valid API key.
                     </p>
                     <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                        You must select a Google Cloud Project with <span className="font-bold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/20 px-1 py-0.5 rounded">Billing Enabled</span> to proceed.
+                        If your key is tied to a Google Cloud project, make sure <span className="font-bold text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/20 px-1 py-0.5 rounded">Billing</span> is enabled to avoid access errors.
                     </p>
                 </div>
 
@@ -206,9 +206,9 @@ const App: React.FC = () => {
                             <DollarSign className="w-4 h-4" />
                          </div>
                          <div className="space-y-1">
-                            <p className="text-xs font-bold text-slate-900 dark:text-slate-200">Billing Required</p>
+                            <p className="text-xs font-bold text-slate-900 dark:text-slate-200">Billing Tip</p>
                             <p className="text-xs text-slate-500 dark:text-slate-400">
-                                Standard API keys will fail. Please ensure you have set up billing in Google AI Studio.
+                                If you see access errors, confirm billing is enabled for your AI Studio project.
                             </p>
                              <a 
                                 href="https://ai.google.dev/gemini-api/docs/billing" 
@@ -227,7 +227,7 @@ const App: React.FC = () => {
                     className="w-full py-3.5 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white rounded-xl font-bold shadow-lg shadow-amber-500/20 transition-all transform hover:scale-[1.02] flex items-center justify-center gap-2"
                 >
                     <Key className="w-4 h-4" />
-                    <span>Select Paid API Key</span>
+                    <span>Select API Key</span>
                 </button>
             </div>
         </div>
